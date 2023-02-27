@@ -1,0 +1,15 @@
+.Grid {
+  color: white;
+  padding: 30px 15px;
+
+  .div {
+    border: 1px solid white;
+    height: 50px;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
