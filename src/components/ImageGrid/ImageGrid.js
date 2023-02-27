@@ -15,31 +15,49 @@ function ImageGrid() {
   return (
     <Grid container spacing={7} className={style.Grid}>
       <Grid item xs={4}>
-        <img src={backpack} alt="backpack" />
+        <a href="/backpack">
+          <img src={backpack} alt="backpack" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={bowie} alt="bowie" />
+        <a href="/bowie">
+          <img src={bowie} alt="bowie" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={climb} alt="climb" />
+        <a href="/climb">
+          <img src={climb} alt="climb" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={fourEyes} alt="fourEyes" />
+        <a href="/four-eyes">
+          <img src={fourEyes} alt="fourEyes" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={green} alt="green" />
+        <a href="/green">
+          <img src={green} alt="green" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={intoTheDeep} alt="intoTheDeep" />
+        <a href="/into-the-deep">
+          <img src={intoTheDeep} alt="intoTheDeep" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={overthinking} alt="overthinking" />
+        <a href="/overthinking">
+          <img src={overthinking} alt="overthinking" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={rays} alt="rays" />
+        <a href="/rays">
+          <img src={rays} alt="rays" />
+        </a>
       </Grid>
       <Grid item xs={4}>
-        <img src={womenRock} alt="womenRock" />
+        <a href="/women-rock">
+          <img src={womenRock} alt="womenRock" />
+        </a>
       </Grid>
     </Grid>
   );
