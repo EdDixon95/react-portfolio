@@ -12,7 +12,9 @@ function Navbar() {
       <div className={style.navbarRight}>
         <ul>
           <li>
-            <HashLink to="/pathLink#work">WORK</HashLink>
+            <HashLink smooth to="/pathLink#work">
+              WORK
+            </HashLink>
           </li>
           <li>
             <Link to="/about">ABOUT</Link>

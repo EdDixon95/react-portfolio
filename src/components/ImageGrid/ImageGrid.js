@@ -11,53 +11,35 @@ import overthinking from "../../media/overthinking.png";
 import rays from "../../media/rays.png";
 import womenRock from "../../media/womenRock.png";
 
-function ImageGrid() {
+function ImageGrid({ handleClick }) {
   return (
     <Grid container spacing={7} className={style.Grid}>
       <Grid item xs={4}>
-        <a href="/backpack">
-          <img src={backpack} alt="backpack" />
-        </a>
+        <img src={backpack} alt="backpack" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/bowie">
-          <img src={bowie} alt="bowie" />
-        </a>
+        <img src={bowie} alt="bowie" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/climb">
-          <img src={climb} alt="climb" />
-        </a>
+        <img src={climb} alt="climb" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/four-eyes">
-          <img src={fourEyes} alt="fourEyes" />
-        </a>
+        <img src={fourEyes} alt="fourEyes" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/green">
-          <img src={green} alt="green" />
-        </a>
+        <img src={green} alt="green" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/into-the-deep">
-          <img src={intoTheDeep} alt="intoTheDeep" />
-        </a>
+        <img src={intoTheDeep} alt="intoTheDeep" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/overthinking">
-          <img src={overthinking} alt="overthinking" />
-        </a>
+        <img src={overthinking} alt="overthinking" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/rays">
-          <img src={rays} alt="rays" />
-        </a>
+        <img src={rays} alt="rays" onClick={handleClick} />
       </Grid>
       <Grid item xs={4}>
-        <a href="/women-rock">
-          <img src={womenRock} alt="womenRock" />
-        </a>
+        <img src={womenRock} alt="womenRock" onClick={handleClick} />
       </Grid>
     </Grid>
   );
