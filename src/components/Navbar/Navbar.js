@@ -7,7 +7,9 @@ function Navbar() {
   return (
     <nav className={style.Navbar}>
       <div className={style.navbarLeft}>
-        <Link to="/">MILO MCALENY</Link>
+        <HashLink smooth to="/pathLink#carousel">
+          MILO MCALENY
+        </HashLink>
       </div>
       <div className={style.navbarRight}>
         <ul>

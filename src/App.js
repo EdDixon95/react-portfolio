@@ -10,8 +10,11 @@ function App() {
   const [clickedImg, setClickedImg] = useState(null);
 
   const handleEvent = (e) => {
-    console.log(e.target.src);
     setClickedImg(e.target.src);
+  };
+
+  const dismiss = () => {
+    setClickedImg(null);
   };
 
   return (
@@ -21,12 +24,14 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />} />
         </Routes>
-        <ImageCarousel />
+        <div id="carousel">
+          <ImageCarousel id="carousel" />
+        </div>
         <div id="work">
           <ImageGrid handleClick={handleEvent} />
         </div>
       </div>
-      {clickedImg && <Modal clickedImg={clickedImg} />}
+      {clickedImg && <Modal clickedImg={clickedImg} handleClick={dismiss} />}
     </div>
   );
 }
