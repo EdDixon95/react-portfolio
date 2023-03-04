@@ -1,0 +1,122 @@
+.aboutContainerInactive {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+  .aboutInactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    height: 90vh;
+    left: 100%;
+    top: 5%;
+    animation: slideIn;
+    animation-duration: 0.4s;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+
+    img {
+      height: 300px;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      color: black;
+    }
+  }
+}
+
+.aboutContainerActive {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+  .aboutActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    height: 90vh;
+    left: 68%;
+    top: 5%;
+    animation: slideOut;
+    animation-duration: 0.4s;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+
+    img {
+      height: 300px;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      color: black;
+    }
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 68%;
+  }
+}
+
+@keyframes dim {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    left: 68%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes bright {
+  0% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

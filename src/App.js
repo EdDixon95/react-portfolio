@@ -8,22 +8,25 @@ import React, { useState } from "react";
 
 function App() {
   const [clickedImg, setClickedImg] = useState(null);
+  const [aboutPage, setAboutPage] = useState(false);
 
   const handleEvent = (e) => {
     setClickedImg(e.target.src);
   };
 
-  const dismiss = () => {
+  const dismissImage = () => {
     setClickedImg(null);
   };
 
+  const openAbout = () => {
+    setAboutPage(!aboutPage);
+  };
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App" id="app">
+      <Navbar handleClick={openAbout} />
       <div className="container" style={{ backgroundColor: "black" }}>
-        <Routes>
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <About aboutPage={aboutPage} handleClick={openAbout} />
         <div id="carousel">
           <ImageCarousel id="carousel" />
         </div>
@@ -31,7 +34,9 @@ function App() {
           <ImageGrid handleClick={handleEvent} />
         </div>
       </div>
-      {clickedImg && <Modal clickedImg={clickedImg} handleClick={dismiss} />}
+      {clickedImg && (
+        <Modal clickedImg={clickedImg} handleClick={dismissImage} />
+      )}
     </div>
   );
 }

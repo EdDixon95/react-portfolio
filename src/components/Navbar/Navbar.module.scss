@@ -38,6 +38,16 @@ body {
     color: orange;
   }
 
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+  }
+
+  button:hover {
+    color: orange;
+  }
+
   .navbarLeft {
     font-size: 2rem;
   }

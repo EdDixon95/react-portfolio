@@ -3,23 +3,23 @@ import { Link } from "react-router-dom";
 import style from "./Navbar.module.scss";
 import { HashLink } from "react-router-hash-link";
 
-function Navbar() {
+function Navbar({ handleClick }) {
   return (
     <nav className={style.Navbar}>
       <div className={style.navbarLeft}>
-        <HashLink smooth to="/pathLink#carousel">
-          MILO MCALENY
+        <HashLink smooth to="/#app">
+          MILO McALENY
         </HashLink>
       </div>
       <div className={style.navbarRight}>
         <ul>
           <li>
-            <HashLink smooth to="/pathLink#work">
+            <HashLink smooth to="#work">
               WORK
             </HashLink>
           </li>
           <li>
-            <Link to="/about">ABOUT</Link>
+            <Link onClick={handleClick}>ABOUT</Link>
           </li>
           <li>
             <Link to="/Contact">CONTACT</Link>
