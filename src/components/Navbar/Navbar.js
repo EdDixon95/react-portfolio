@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Navbar.module.scss";
 import { HashLink } from "react-router-hash-link";
 
-function Navbar({ handleClick }) {
+function Navbar({ handleToggleAbout, handleToggleContact }) {
   return (
     <nav className={style.Navbar}>
       <div className={style.navbarLeft}>
@@ -19,10 +19,10 @@ function Navbar({ handleClick }) {
             </HashLink>
           </li>
           <li>
-            <Link onClick={handleClick}>ABOUT</Link>
+            <Link onClick={handleToggleAbout}>ABOUT</Link>
           </li>
           <li>
-            <Link to="/Contact">CONTACT</Link>
+            <Link onClick={handleToggleContact}>CONTACT</Link>
           </li>
         </ul>
       </div>

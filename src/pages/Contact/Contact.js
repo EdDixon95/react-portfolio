@@ -1,18 +1,21 @@
 import React from "react";
-import style from "./About.module.scss";
-import milo from "../../media/milo.png";
+import style from "./Contact.module.scss";
 import { Link } from "react-router-dom";
 
-function About({ aboutPage, handleClick }) {
+function About({ contactPage, handleClick }) {
   return (
     <div
       className={
-        aboutPage ? style.aboutContainerActive : style.aboutContainerInactive
+        contactPage
+          ? style.contactContainerActive
+          : style.contactContainerInactive
       }
     >
-      <div className={aboutPage ? style.aboutActive : style.aboutInactive}>
+      <div
+        className={contactPage ? style.contactActive : style.contactInactive}
+      >
         <Link onClick={handleClick}>X</Link>
-        <img src={milo} />
+        <h1>GET IN TOUCH</h1>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
