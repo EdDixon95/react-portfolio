@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/futurist-fixed-width");
+@import "../../variables";
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Futurist Fixed-width", sans-serif;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
 .Navbar {
@@ -21,6 +21,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  font-family: $characterFont;
 
   div {
     display: flex;

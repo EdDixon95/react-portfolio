@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import ImageCarousel from "./components/Carousel/Carousel";
