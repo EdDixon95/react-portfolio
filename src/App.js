@@ -3,6 +3,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import ImageCarousel from "./components/Carousel/Carousel";
 import ImageGrid from "./components/ImageGrid/ImageGrid";
+import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
 import React, { useState } from "react";
 import { imgData } from "./media/imgData";
@@ -55,6 +56,7 @@ function App() {
           handleClick={dismissImage}
         />
       )}
+      <Footer />
     </div>
   );
 }
