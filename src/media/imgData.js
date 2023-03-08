@@ -1,12 +1,15 @@
 import backpack from "./images/backpack.png";
 import bowie from "./images/bowie.png";
 import climb from "./images/climb.png";
+import curlyFish from "./images/curlyFish.jpeg";
 import fourEyes from "./images/fourEyes.png";
 import green from "./images/green.png";
+import handShrooms from "./images/handShrooms.jpeg";
 import intoTheDeep2 from "./images/intoTheDeep2.png";
 import overthinking from "./images/overthinking.png";
-import rays from "./images/rays.png";
+import rays from "./images/rays.jpeg";
 import womenRock from "./images/womenRock.png";
+import woodFrog from "./images/woodFrog.jpeg";
 
 export const imgData = [
   {
@@ -52,10 +55,27 @@ export const imgData = [
     description:
       "Have you seen these Rays? An Artists impression of Steve Irwin's killers.",
   },
+  {
+    title: "woodFrog",
+    src: woodFrog,
+    description: "WoodFroglet",
+  },
 
   {
     title: "womenRock",
     src: womenRock,
     description: "Facts.",
+  },
+  {
+    title: "curlyFish",
+    src: curlyFish,
+    description:
+      "Sweet, sweet curly fish in their natural environment, a collage.",
+  },
+
+  {
+    title: "handShrooms",
+    src: handShrooms,
+    description: "HandShrooms, as seen in The Last Of Us",
   },
 ];

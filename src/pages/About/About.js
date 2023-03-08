@@ -2,7 +2,7 @@ import React from "react";
 import style from "./About.module.scss";
 import milo from "../../media/images/milo.png";
 import { Link } from "react-router-dom";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { CgClose } from "react-icons/cg";
 
 function About({ aboutPage, handleClick }) {
   return (
@@ -13,14 +13,13 @@ function About({ aboutPage, handleClick }) {
     >
       <div className={aboutPage ? style.aboutActive : style.aboutInactive}>
         <Link onClick={handleClick}>
-          <AiOutlineCloseCircle />
+          <CgClose />
         </Link>
         <img src={milo} alt="milo" />
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat."
+          "I am an experienced videographer, photographer, graphic designer &
+          illustrator. I have worked to create content for a wide range of
+          brands, always with fresh, professional and imaginative designs."
         </p>
       </div>
     </div>

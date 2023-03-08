@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import TextareaAutosize from "react-textarea-autosize";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { CgClose } from "react-icons/cg";
 
 const SERVICE_ID = "service_cjwsair";
 const TEMPLATE_ID = "template_rji6qf2";
-const PUBLIC_KEY = "cqWoBcQNbiGh9wac";
+const PUBLIC_KEY = "cqWoBcQNbiGh9wacY";
 
 function About({ contactPage, handleClick }) {
   const handleOnSubmit = (e) => {
@@ -44,7 +44,7 @@ function About({ contactPage, handleClick }) {
         className={contactPage ? style.contactActive : style.contactInactive}
       >
         <Link onClick={handleClick}>
-          <AiOutlineCloseCircle />
+          <CgClose />
         </Link>
         <h1>GET IN TOUCH</h1>
         <form onSubmit={handleOnSubmit} className={style.form}>

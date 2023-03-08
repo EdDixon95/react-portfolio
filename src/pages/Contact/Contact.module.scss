@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 1;
   animation: bright;
-  animation-duration: 0.4s;
+  animation-duration: 0.2s;
   font-family: "Futurist Fixed-width", sans-serif;
 
   .contactInactive {
@@ -19,12 +19,12 @@
     padding: 20px;
     border-radius: 2px;
     background-color: rgba($lightColor, 0.8);
-    width: 50%;
+    width: 30%;
     height: 90vh;
     left: 100%;
     top: 5%;
     animation: slideIn;
-    animation-duration: 0.4s;
+    animation-duration: 0.2s;
 
     h1 {
       text-align: center;
@@ -57,7 +57,7 @@
   width: 100%;
   z-index: 1;
   animation: dim;
-  animation-duration: 0.4s;
+  animation-duration: 0.2s;
   font-family: "Futurist Fixed-width", sans-serif;
 
   .contactActive {
@@ -67,12 +67,12 @@
     padding: 20px;
     border-radius: 2px;
     background-color: rgba($lightColor, 0.8);
-    width: 50%;
+    width: 30%;
     height: 90vh;
-    left: 48%;
+    left: 68%;
     top: 5%;
     animation: slideOut;
-    animation-duration: 0.4s;
+    animation-duration: 0.2s;
 
     h1 {
       text-align: center;
@@ -100,11 +100,14 @@
     .textInput {
       width: 100%;
       margin-bottom: 10%;
+      padding: 4px;
     }
 
     .textArea {
       width: 100%;
       margin-bottom: 5%;
+      resize: vertical;
+      max-height: 200px;
     }
 
     .submit {
@@ -123,7 +126,7 @@
     left: 100%;
   }
   100% {
-    left: 48%;
+    left: 68%;
   }
 }
 
@@ -138,7 +141,7 @@
 
 @keyframes slideIn {
   0% {
-    left: 48%;
+    left: 68%;
   }
   100% {
     left: 100%;
