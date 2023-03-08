@@ -1,5 +1,4 @@
 import style from "./Modal.module.scss";
-import { imgData } from "../../media/imgData";
 
 const Modal = ({ clickedImg, clickedImgDescription, handleClick }) => {
   return (
