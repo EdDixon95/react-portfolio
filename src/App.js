@@ -5,14 +5,19 @@ import ImageCarousel from "./components/Carousel/Carousel";
 import ImageGrid from "./components/ImageGrid/ImageGrid";
 import Modal from "./components/Modal/Modal";
 import React, { useState } from "react";
+import { imgData } from "./media/imgData";
 
 function App() {
   const [clickedImg, setClickedImg] = useState(null);
+  const [clickedImgDescription, setClickedImgDescription] = useState("");
   const [aboutPage, setAboutPage] = useState(false);
   const [contactPage, setContactPage] = useState(false);
 
   const handleEvent = (e) => {
     setClickedImg(e.target.src);
+    setClickedImgDescription(
+      imgData.find((img) => img.title === e.target.alt).description
+    );
   };
 
   const dismissImage = () => {
@@ -44,7 +49,11 @@ function App() {
         </div>
       </div>
       {clickedImg && (
-        <Modal clickedImg={clickedImg} handleClick={dismissImage} />
+        <Modal
+          clickedImg={clickedImg}
+          clickedImgDescription={clickedImgDescription}
+          handleClick={dismissImage}
+        />
       )}
     </div>
   );

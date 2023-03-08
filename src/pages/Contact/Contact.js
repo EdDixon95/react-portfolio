@@ -70,8 +70,6 @@ function About({ contactPage, handleClick }) {
               name="from_name"
               placeholder="Name…"
               required
-              icon="user circle"
-              iconPosition="left"
             />
           </label>
           <label>

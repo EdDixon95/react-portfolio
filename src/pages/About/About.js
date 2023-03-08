@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./About.module.scss";
-import milo from "../../media/milo.png";
+import milo from "../../media/images/milo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
