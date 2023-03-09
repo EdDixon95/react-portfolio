@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
 import React, { useState } from "react";
 import { imgData } from "./media/imgData";
+import style from "./App.module.scss";
 
 function App() {
   const [clickedImg, setClickedImg] = useState(null);
@@ -39,7 +40,7 @@ function App() {
         handleToggleAbout={toggleAbout}
         handleToggleContact={toggleContact}
       />
-      <div className="container" style={{ backgroundColor: "black" }}>
+      <div className={style.container}>
         <About aboutPage={aboutPage} handleClick={toggleAbout} />
         <Contact contactPage={contactPage} handleClick={toggleContact} />
         <div id="carousel">

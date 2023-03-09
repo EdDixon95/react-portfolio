@@ -1,5 +1,7 @@
+@import "../../variables";
+
 .modaldiv {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba($darkColor, 0.8);
   position: fixed;
   top: 0;
   height: 100vh;
@@ -28,7 +30,7 @@
     p {
       font-size: 1rem;
       text-align: center;
-      color: #fff;
+      color: $lightColor;
     }
   }
 }

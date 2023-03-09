@@ -112,10 +112,10 @@
 
 @keyframes dim {
   0% {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba($darkColor, 0);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba($darkColor, 0.8);
   }
 }
 
@@ -130,9 +130,9 @@
 
 @keyframes bright {
   0% {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba($darkColor, 0.8);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba($darkColor, 0);
   }
 }

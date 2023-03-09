@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: black;
+  background-color: $darkColor;
   width: 100%;
   position: sticky;
   top: 0;
@@ -32,21 +32,21 @@ body {
 
   a {
     text-decoration: none;
-    color: white;
+    color: $lightColor;
   }
 
   a:hover {
-    color: orange;
+    color: $accentColor;
   }
 
   button {
-    background-color: black;
+    background-color: $darkColor;
     border: none;
-    color: white;
+    color: $lightColor;
   }
 
   button:hover {
-    color: orange;
+    color: $accentColor;
   }
 
   .navbarLeft {
