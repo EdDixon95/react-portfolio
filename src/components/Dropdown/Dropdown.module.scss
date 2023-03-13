@@ -2,9 +2,9 @@
 
 .dropdown {
   position: fixed;
-
+  transition: 0.3s ease-out;
   z-index: 2;
-  height: 120vh;
+  height: 110vh;
   width: 100%;
   background-color: $darkColor;
 
@@ -31,33 +31,10 @@
 }
 
 .active {
-  bottom: -20%;
-  animation: dropdown;
-  animation-duration: 0.5s;
+  transform: translateY(-10%);
+  overflow: hidden;
 }
 
 .inactive {
-  bottom: 100%;
-  animation: hideDropdown;
-  animation-duration: 0.5s;
-}
-
-@keyframes dropdown {
-  0% {
-    bottom: 100%;
-  }
-
-  100% {
-    bottom: -20%;
-  }
-}
-
-@keyframes hideDropdown {
-  0% {
-    bottom: -20%;
-  }
-
-  100% {
-    bottom: 100%;
-  }
+  transform: translateY(-100%);
 }
