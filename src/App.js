@@ -30,15 +30,27 @@ function App() {
 
   const toggleAbout = () => {
     setAboutPage(!aboutPage);
+    if (contactPage) {
+      setContactPage(false);
+    }
   };
 
   const toggleContact = () => {
     setContactPage(!contactPage);
+    if (aboutPage) {
+      setAboutPage(false);
+    }
   };
 
   const toggleDropdown = () => {
     setDropdown(!dropdown);
-    console.log("did it!");
+  };
+
+  const toHome = () => {
+    setDropdown(false);
+    setContactPage(false);
+    setAboutPage(false);
+    setClickedImg(null);
   };
 
   return (
@@ -47,6 +59,7 @@ function App() {
         handleToggleAbout={toggleAbout}
         handleToggleContact={toggleContact}
         handleToggleDropdown={toggleDropdown}
+        handleHome={toHome}
       />
       <Dropdown
         dropdown={dropdown}

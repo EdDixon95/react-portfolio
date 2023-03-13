@@ -8,11 +8,12 @@ function Navbar({
   handleToggleAbout,
   handleToggleContact,
   handleToggleDropdown,
+  handleHome,
 }) {
   return (
     <nav className={style.Navbar}>
       <div className={style.navbarLeft}>
-        <HashLink smooth to="/#app">
+        <HashLink smooth to="/#app" onClick={handleHome}>
           MILO McALENY
         </HashLink>
       </div>

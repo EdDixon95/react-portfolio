@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Dropdown.module.scss";
+import { Link } from "react-router-dom";
 
 function Dropdown({
   dropdown,
@@ -26,13 +27,13 @@ function Dropdown({
     >
       <ul>
         <li>
-          <a onClick={handleAboutClick}>About</a>
+          <Link onClick={handleAboutClick}>About</Link>
         </li>
         <li>
-          <a onClick={handleContactClick}>Contact</a>
+          <Link onClick={handleContactClick}>Contact</Link>
         </li>
         <li>
-          <a href="/">LinkedIn</a>
+          <Link href="/">LinkedIn</Link>
         </li>
       </ul>
     </div>

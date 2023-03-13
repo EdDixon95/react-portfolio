@@ -16,7 +16,7 @@ export const imgData = [
     title: "backpack",
     src: backpack,
     description:
-      "Lovely wanders and ridiculous claims. aaaaaldsnfdjabf lqjbdfbqjsldlfjqsdjk fhlqjsdbflhbasdvlhas cdfubfiuahsdyovuiefehnfuwgsdiufdngwhfiudfhjuwheont ufdjhdoiueftdvhnfurnehftiuwrtuifnwod",
+      "Lovely wanders and ridiculous claims. aaaaaldsnfdjabf lqjbdfbqjsldlfjqsdjk fhlqjsdbflhbasdvlhas cdfubfiuahsdyovuiefehnf ufdjhdoiueftd",
   },
   {
     title: "bowie",
