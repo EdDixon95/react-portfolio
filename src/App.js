@@ -38,6 +38,7 @@ function App() {
 
   const toggleDropdown = () => {
     setDropdown(!dropdown);
+    console.log("did it!");
   };
 
   return (
@@ -47,7 +48,7 @@ function App() {
         handleToggleContact={toggleContact}
         handleToggleDropdown={toggleDropdown}
       />
-      {dropdown && <Dropdown />}
+      <Dropdown dropdown={dropdown} />
       <div className={style.container}>
         <About aboutPage={aboutPage} handleClick={toggleAbout} />
         <Contact contactPage={contactPage} handleClick={toggleContact} />

@@ -1,9 +1,15 @@
 import React from "react";
 import style from "./Dropdown.module.scss";
 
-function Dropdown() {
+function Dropdown({ dropdown }) {
   return (
-    <div className={style.dropdown}>
+    <div
+      className={
+        dropdown
+          ? `${style.dropdown} ${style.active}`
+          : `${style.dropdown} ${style.inactive}`
+      }
+    >
       <ul>
         <li>
           <a href="/">About</a>
