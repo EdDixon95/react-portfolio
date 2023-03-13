@@ -1,7 +1,21 @@
 import React from "react";
 import style from "./Dropdown.module.scss";
 
-function Dropdown({ dropdown }) {
+function Dropdown({
+  dropdown,
+  handleToggleAbout,
+  handleToggleContact,
+  handleToggleDropdown,
+}) {
+  const handleAboutClick = () => {
+    handleToggleDropdown();
+    handleToggleAbout();
+  };
+  const handleContactClick = () => {
+    handleToggleDropdown();
+    handleToggleContact();
+  };
+
   return (
     <div
       className={
@@ -12,10 +26,10 @@ function Dropdown({ dropdown }) {
     >
       <ul>
         <li>
-          <a href="/">About</a>
+          <a onClick={handleAboutClick}>About</a>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <a onClick={handleContactClick}>Contact</a>
         </li>
         <li>
           <a href="/">LinkedIn</a>

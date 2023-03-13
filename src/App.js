@@ -48,7 +48,12 @@ function App() {
         handleToggleContact={toggleContact}
         handleToggleDropdown={toggleDropdown}
       />
-      <Dropdown dropdown={dropdown} />
+      <Dropdown
+        dropdown={dropdown}
+        handleToggleAbout={toggleAbout}
+        handleToggleContact={toggleContact}
+        handleToggleDropdown={toggleDropdown}
+      />
       <div className={style.container}>
         <About aboutPage={aboutPage} handleClick={toggleAbout} />
         <Contact contactPage={contactPage} handleClick={toggleContact} />

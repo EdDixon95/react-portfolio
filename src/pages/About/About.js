@@ -8,10 +8,18 @@ function About({ aboutPage, handleClick }) {
   return (
     <div
       className={
-        aboutPage ? style.aboutContainerActive : style.aboutContainerInactive
+        aboutPage
+          ? `${style.aboutContainer} ${style.containerActive}`
+          : `${style.aboutContainer} ${style.containerInactive}`
       }
     >
-      <div className={aboutPage ? style.aboutActive : style.aboutInactive}>
+      <div
+        className={
+          aboutPage
+            ? `${style.about} ${style.active}`
+            : `${style.about} ${style.inactive}`
+        }
+      >
         <Link onClick={handleClick}>
           <CgClose />
         </Link>
