@@ -6,7 +6,13 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif, sans-serif;
+  overflow: scroll;
+}
+
+.carousel.slide {
+  width: 100%;
 }
 
 .Navbar {
@@ -17,15 +23,12 @@ body {
   align-items: center;
   padding: 20px;
   background-color: $darkColor;
-  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1;
   font-family: $characterFont;
 
   div {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -49,10 +52,6 @@ body {
     color: $accentColor;
   }
 
-  .navbarLeft {
-    font-size: 2rem;
-  }
-
   .navbarRight {
     font-size: 0.8rem;
     display: flex;
@@ -68,5 +67,31 @@ body {
       margin: 40px;
       list-style: none;
     }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbarLeft {
+    font-size: 1.8rem;
+  }
+  .largeButtonList {
+    display: none;
+  }
+  a.largeButtons {
+    display: none;
+    margin: 0;
+  }
+  a.smallButton {
+    padding-right: -15px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  a.smallButton {
+    display: none;
+  }
+  .navbarLeft {
+    font-size: 2rem;
   }
 }

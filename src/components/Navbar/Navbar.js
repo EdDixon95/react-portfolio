@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.scss";
 import { HashLink } from "react-router-hash-link";
+import { FaBars } from "react-icons/fa";
 
 function Navbar({ handleToggleAbout, handleToggleContact }) {
   return (
@@ -12,19 +13,33 @@ function Navbar({ handleToggleAbout, handleToggleContact }) {
         </HashLink>
       </div>
       <div className={style.navbarRight}>
-        <ul>
-          <li>
-            <HashLink smooth to="#work">
-              WORK
-            </HashLink>
-          </li>
-          <li>
-            <Link onClick={handleToggleAbout}>ABOUT</Link>
-          </li>
-          <li>
-            <Link onClick={handleToggleContact}>CONTACT</Link>
-          </li>
-        </ul>
+        <div className={style.largeButtonList}>
+          <ul>
+            <li>
+              <HashLink className={style.largeButtons} smooth to="#work">
+                WORK
+              </HashLink>
+            </li>
+            <li>
+              <Link className={style.largeButtons} onClick={handleToggleAbout}>
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={style.largeButtons}
+                onClick={handleToggleContact}
+              >
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className={style.mobileNavContainer}>
+          <Link className={style.smallButton}>
+            <FaBars />
+          </Link>
+        </div>
       </div>
     </nav>
   );
