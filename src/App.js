@@ -8,12 +8,14 @@ import Modal from "./components/Modal/Modal";
 import React, { useState } from "react";
 import { imgData } from "./media/imgData";
 import style from "./App.module.scss";
+import Dropdown from "./components/Dropdown/Dropdown";
 
 function App() {
   const [clickedImg, setClickedImg] = useState(null);
   const [clickedImgDescription, setClickedImgDescription] = useState("");
   const [aboutPage, setAboutPage] = useState(false);
   const [contactPage, setContactPage] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleEvent = (e) => {
     setClickedImg(e.target.src);
@@ -34,12 +36,18 @@ function App() {
     setContactPage(!contactPage);
   };
 
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
+  };
+
   return (
     <div className="App" id="app">
       <Navbar
         handleToggleAbout={toggleAbout}
         handleToggleContact={toggleContact}
+        handleToggleDropdown={toggleDropdown}
       />
+      {dropdown && <Dropdown />}
       <div className={style.container}>
         <About aboutPage={aboutPage} handleClick={toggleAbout} />
         <Contact contactPage={contactPage} handleClick={toggleContact} />

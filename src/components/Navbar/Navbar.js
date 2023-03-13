@@ -4,7 +4,11 @@ import style from "./Navbar.module.scss";
 import { HashLink } from "react-router-hash-link";
 import { FaBars } from "react-icons/fa";
 
-function Navbar({ handleToggleAbout, handleToggleContact }) {
+function Navbar({
+  handleToggleAbout,
+  handleToggleContact,
+  handleToggleDropdown,
+}) {
   return (
     <nav className={style.Navbar}>
       <div className={style.navbarLeft}>
@@ -36,7 +40,7 @@ function Navbar({ handleToggleAbout, handleToggleContact }) {
           </ul>
         </div>
         <div className={style.mobileNavContainer}>
-          <Link className={style.smallButton}>
+          <Link className={style.smallButton} onClick={handleToggleDropdown}>
             <FaBars />
           </Link>
         </div>

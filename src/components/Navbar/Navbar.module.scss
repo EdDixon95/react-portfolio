@@ -25,7 +25,7 @@ body {
   background-color: $darkColor;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   font-family: $characterFont;
 
   div {
@@ -84,6 +84,7 @@ body {
   a.smallButton {
     padding-right: -15px;
     font-size: 2rem;
+    margin-left: 30px;
   }
 }
 
