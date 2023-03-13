@@ -36,12 +36,16 @@ function About({ contactPage, handleClick }) {
     <div
       className={
         contactPage
-          ? style.contactContainerActive
-          : style.contactContainerInactive
+          ? `${style.contactContainer} ${style.containerActive}`
+          : `${style.contactContainer} ${style.containerInactive}`
       }
     >
       <div
-        className={contactPage ? style.contactActive : style.contactInactive}
+        className={
+          contactPage
+            ? `${style.contact} ${style.active}`
+            : `${style.contact} ${style.inactive}`
+        }
       >
         <Link onClick={handleClick}>
           <CgClose />
