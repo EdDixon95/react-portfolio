@@ -1,4 +1,9 @@
 @import "../../variables";
+@font-face {
+  font-family: ModernSans-Light;
+  src: url("../../fonts/ModernSans-Light.otf") format("woff"),
+    url("../../fonts/ModernSans-Light.otf") format("truetype");
+}
 
 .modaldiv {
   background-color: rgba($darkColor, 0.8);
@@ -33,6 +38,7 @@
       text-align: center;
       color: $lightColor;
       width: 100%;
+      font-family: ModernSans-Light;
     }
   }
 }

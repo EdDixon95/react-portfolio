@@ -52,42 +52,35 @@ function About({ contactPage, handleClick }) {
         </Link>
         <h1>GET IN TOUCH</h1>
         <form onSubmit={handleOnSubmit} className={style.form}>
-          <label>
-            Your Email
-            <input
-              type="email"
-              className={style.textInput}
-              id="form-input-control-email"
-              label="Email"
-              name="from_email"
-              placeholder="Email…"
-              required
-            />
-          </label>
-          <label>
-            Your Name
-            <input
-              type="text"
-              className={style.textInput}
-              id="form-input-control-last-name"
-              label="Name"
-              name="from_name"
-              placeholder="Name…"
-              required
-            />
-          </label>
-          <label>
-            Your Message
-            <TextareaAutosize
-              minRows={5}
-              className={style.textArea}
-              id="form-textarea-control-opinion"
-              label="Message"
-              name="message"
-              placeholder="Message…"
-              required
-            />
-          </label>
+          <input
+            type="email"
+            className={style.textInput}
+            id="form-input-control-email"
+            label="Email"
+            name="from_email"
+            placeholder="Email…"
+            required
+          />
+
+          <input
+            type="text"
+            className={style.textInput}
+            id="form-input-control-last-name"
+            label="Name"
+            name="from_name"
+            placeholder="Name…"
+            required
+          />
+
+          <TextareaAutosize
+            minRows={5}
+            className={style.textArea}
+            id="form-textarea-control-opinion"
+            label="Message"
+            name="message"
+            placeholder="Your message…"
+            required
+          />
           <input className={style.submit} type="submit" value="Submit" />
         </form>
       </div>

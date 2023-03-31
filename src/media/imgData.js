@@ -1,15 +1,21 @@
 import backpack from "./images/backpack.png";
-import bowie from "./images/bowie.png";
-import climb from "./images/climb.png";
-import curlyFish from "./images/curlyFish.jpeg";
-import fourEyes from "./images/fourEyes.png";
-import green from "./images/green.png";
+import bowie from "./images/bowie.jpeg";
+import climb from "./images/climb.jpg";
+import curlyFish from "./images/curlyFish.jpg";
+import fourEyes from "./images/fourEyes.jpeg";
+import green from "./images/green.jpeg";
 import handShrooms from "./images/handShrooms.jpeg";
-import intoTheDeep2 from "./images/intoTheDeep2.png";
-import overthinking from "./images/overthinking.png";
-import rays from "./images/rays.jpeg";
+import intoTheDeep2 from "./images/intoTheDeep2.jpg";
+import overthinking from "./images/overthinking.jpeg";
+import rays from "./images/rays.jpg";
 import womenRock from "./images/womenRock.png";
 import woodFrog from "./images/woodFrog.jpeg";
+import wanderers from "./images/wanderers.png";
+import shrooms from "./images/shrooms.jpg";
+import zooSnake from "./images/zooSnake.jpg";
+import intoTheNight from "./images/intoTheNight.jpg";
+import zooFrog from "./images/zooFrog.jpg";
+import palmOil from "./images/palmOil.jpg";
 
 export const imgData = [
   {
@@ -19,9 +25,24 @@ export const imgData = [
       "Lovely wanders and ridiculous claims. aaaaaldsnfdjabf lqjbdfbqjsldlfjqsdjk fhlqjsdbflhbasdvlhas cdfubfiuahsdyovuiefehnf ufdjhdoiueftd",
   },
   {
+    title: "wanderers",
+    src: wanderers,
+    description: "Wombles of Wimbledon Common are we.",
+  },
+  {
+    title: "intoTheNight",
+    src: intoTheNight,
+    description: "Full creative identity designed for CZ Into The Night event",
+  },
+  {
     title: "bowie",
     src: bowie,
     description: "ZiggyZig Zag StarBoi Bowie in space",
+  },
+  {
+    title: "zooSnake",
+    src: zooSnake,
+    description: "Digital banner for CZ campaign",
   },
   {
     title: "climb",
@@ -29,9 +50,19 @@ export const imgData = [
     description: "Milo Moocher rocking over",
   },
   {
+    title: "zooFrog",
+    src: zooFrog,
+    desciption: "Font experimentation for conservation social piece",
+  },
+  {
     title: "fourEyes",
     src: fourEyes,
     description: "Trippy Dippy Melty Specs",
+  },
+  {
+    title: "palmOil",
+    src: palmOil,
+    description: "Infographic detailing the importance of sustainable palm oil",
   },
   {
     title: "green",
@@ -77,5 +108,10 @@ export const imgData = [
     title: "handShrooms",
     src: handShrooms,
     description: "HandShrooms, as seen in The Last Of Us",
+  },
+  {
+    title: "shrooms",
+    src: shrooms,
+    description: "A member of the wood wide web",
   },
 ];
