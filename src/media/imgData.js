@@ -50,7 +50,7 @@ export const imgData = [
   {
     title: "zooFrog",
     src: zooFrog,
-    desciption: "Font experimentation for conservation social post",
+    description: "Font experimentation for conservation social post",
   },
   {
     title: "fourEyes",
