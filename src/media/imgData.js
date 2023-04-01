@@ -20,13 +20,12 @@ export const imgData = [
   {
     title: "backpack",
     src: backpack,
-    description:
-      "Lovely wanders and ridiculous claims. aaaaaldsnfdjabf lqjbdfbqjsldlfjqsdjk fhlqjsdbflhbasdvlhas cdfubfiuahsdyovuiefehnf ufdjhdoiueftd",
+    description: "Double page spread illustration for Beta Magazine",
   },
   {
     title: "wanderers",
     src: wanderers,
-    description: "Wombles of Wimbledon Common are we.",
+    description: "Double page spread illustration for Beta Magazine",
   },
   {
     title: "intoTheNight",
@@ -36,7 +35,7 @@ export const imgData = [
   {
     title: "bowie",
     src: bowie,
-    description: "ZiggyZig Zag StarBoi Bowie in space",
+    description: "Bowie. Pencil sketch + digital graphics",
   },
   {
     title: "zooSnake",
@@ -46,17 +45,22 @@ export const imgData = [
   {
     title: "climb",
     src: climb,
-    description: "Milo Moocher rocking over",
+    description: "Climbing collage",
   },
   {
     title: "zooFrog",
     src: zooFrog,
-    desciption: "Font experimentation for conservation social piece",
+    desciption: "Font experimentation for conservation social post",
   },
   {
     title: "fourEyes",
     src: fourEyes,
-    description: "Trippy Dippy Melty Specs",
+    description: "Logo design for Four Eyes theatre company",
+  },
+  {
+    title: "shrooms",
+    src: shrooms,
+    description: "Mushroom illustration",
   },
   {
     title: "palmOil",
@@ -66,45 +70,38 @@ export const imgData = [
   {
     title: "green",
     src: green,
-    description: "Nothin' but an Eco Friendly G Thang",
+    description: "G for green.",
   },
   {
     title: "intoTheDeep",
     src: intoTheDeep,
-    description:
-      "Poster of a daring and necessary play held at the Manchester Fringe",
+    description: "Poster design for Fringe production",
   },
   {
     title: "overthinking",
     src: overthinking,
-    description: "A visual explanation of the importannce of not doing this.",
+    description: "Overthinking.",
   },
   {
     title: "rays",
     src: rays,
-    description:
-      "Have you seen these Rays? An Artists impression of Steve Irwin's killers.",
+    description: "Manta rays - pencil illustration + digital collage.",
   },
   {
     title: "woodFrog",
     src: woodFrog,
-    description: "WoodFroglet",
+    description: "Cryogenic wood frog",
   },
 
   {
     title: "womenRock",
     src: womenRock,
-    description: "Facts.",
+    description:
+      "Three colour piece for The Climbing Hangar t-shirt competition.",
   },
   {
     title: "curlyFish",
     src: curlyFish,
-    description:
-      "Sweet, sweet curly fish in their natural environment, a collage.",
-  },
-  {
-    title: "shrooms",
-    src: shrooms,
-    description: "A member of the wood wide web",
+    description: "Pyjama shark sketch + collage",
   },
 ];
