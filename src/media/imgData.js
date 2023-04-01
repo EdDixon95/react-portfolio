@@ -4,12 +4,11 @@ import climb from "./images/climb.jpg";
 import curlyFish from "./images/curlyFish.jpg";
 import fourEyes from "./images/fourEyes.jpeg";
 import green from "./images/green.jpeg";
-import handShrooms from "./images/handShrooms.jpeg";
-import intoTheDeep2 from "./images/intoTheDeep2.jpg";
+import intoTheDeep from "./images/intoTheDeep.jpg";
 import overthinking from "./images/overthinking.jpeg";
 import rays from "./images/rays.jpg";
 import womenRock from "./images/womenRock.png";
-import woodFrog from "./images/woodFrog.jpeg";
+import woodFrog from "./images/woodFrog.jpg";
 import wanderers from "./images/wanderers.png";
 import shrooms from "./images/shrooms.jpg";
 import zooSnake from "./images/zooSnake.jpg";
@@ -71,7 +70,7 @@ export const imgData = [
   },
   {
     title: "intoTheDeep",
-    src: intoTheDeep2,
+    src: intoTheDeep,
     description:
       "Poster of a daring and necessary play held at the Manchester Fringe",
   },
@@ -102,12 +101,6 @@ export const imgData = [
     src: curlyFish,
     description:
       "Sweet, sweet curly fish in their natural environment, a collage.",
-  },
-
-  {
-    title: "handShrooms",
-    src: handShrooms,
-    description: "HandShrooms, as seen in The Last Of Us",
   },
   {
     title: "shrooms",
