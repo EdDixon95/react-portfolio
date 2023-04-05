@@ -5,7 +5,7 @@ import ImageCarousel from "./components/Carousel/Carousel";
 import ImageGrid from "./components/ImageGrid/ImageGrid";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { imgData } from "./media/imgData";
 import style from "./App.module.scss";
 import Dropdown from "./components/Dropdown/Dropdown";
@@ -16,6 +16,10 @@ function App() {
   const [aboutPage, setAboutPage] = useState(false);
   const [contactPage, setContactPage] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+
+  useEffect(() => {
+    document.title = "Milo McPortfolio";
+  }, []);
 
   const handleEvent = (e) => {
     setClickedImg(e.target.src);
