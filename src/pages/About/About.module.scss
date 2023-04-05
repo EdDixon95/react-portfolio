@@ -19,8 +19,7 @@
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
-    padding: -0px;
-    border-radius: 2px;
+    background-color: $cardColor;
 
     a {
       position: absolute;
@@ -38,8 +37,9 @@
     p {
       font-size: 1rem;
       text-align: center;
-      color: $darkColor;
+      color: $lightColor;
       font-family: ModernSans-Light;
+      padding: 0px 60px;
     }
   }
 }
@@ -72,7 +72,6 @@
   .about {
     width: 100%;
     height: 100vh;
-    background-color: rgba($lightColor, 0.8);
 
     a {
       display: none;
@@ -84,15 +83,18 @@
   .aboutContainer {
     .about {
       width: 30%;
-      height: 80vh;
-      top: 15%;
+      height: calc(100vh - 80px);
+      top: 80px;
       transition: 0.3s ease-out;
-      background-color: rgba($lightColor, 0.9);
 
       a {
         font-size: 1.5rem;
-        color: rgb(50, 50, 50);
+        color: $lightColor;
         margin: 5px;
+      }
+
+      a:hover {
+        color: $accentColor;
       }
     }
   }
@@ -105,7 +107,7 @@
 
   .active {
     left: 100%;
-    transform: translateX(-110%);
+    transform: translateX(-100%);
     overflow: hidden;
   }
 }
