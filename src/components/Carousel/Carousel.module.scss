@@ -1,14 +1,23 @@
-img {
-  object-fit: cover;
+.Carousel {
+  img {
+    object-fit: cover;
+  }
+  div {
+    z-index: 0;
+  }
 }
 
 @media screen and (max-width: 960px) {
-  img {
-    max-height: 35vh;
+  .Carousel {
+    img {
+      max-height: 35vh;
+    }
   }
 }
 @media screen and (min-width: 960px) {
-  img {
-    max-height: 85vh;
+  .Carousel {
+    img {
+      max-height: 85vh;
+    }
   }
 }

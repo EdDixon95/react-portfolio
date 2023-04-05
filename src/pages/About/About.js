@@ -23,12 +23,14 @@ function About({ aboutPage, handleClick }) {
         <Link onClick={handleClick}>
           <CgClose />
         </Link>
-        <img src={milo} alt="milo" />
-        <p>
-          "I am an experienced videographer, photographer, graphic designer &
-          illustrator. I have worked to create content for a wide range of
-          brands, always with fresh, professional and imaginative designs."
-        </p>
+        <div className={style.aboutContent}>
+          <img src={milo} alt="milo" />
+          <p>
+            "I am an experienced videographer, photographer, graphic designer &
+            illustrator. I have worked to create content for a wide range of
+            brands, always with fresh, professional and imaginative designs."
+          </p>
+        </div>
       </div>
     </div>
   );

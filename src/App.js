@@ -21,6 +21,14 @@ function App() {
     document.title = "Milo McPortfolio";
   }, []);
 
+  useEffect(() => {
+    if (aboutPage || contactPage) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  });
+
   const handleEvent = (e) => {
     setClickedImg(e.target.src);
     setClickedImgDescription(
