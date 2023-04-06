@@ -15,6 +15,7 @@ import zooSnake from "./images/zooSnake.jpg";
 import intoTheNight from "./images/intoTheNight.jpg";
 import zooFrog from "./images/zooFrog.jpg";
 import palmOil from "./images/palmOil.jpg";
+import cunningLittleVixen from "./images/cunningLittleVixen.jpg";
 
 export const imgData = [
   {
@@ -104,4 +105,5 @@ export const imgData = [
     src: curlyFish,
     description: "Pyjama shark sketch + collage",
   },
+  { title: "cunningLittleVixen", src: cunningLittleVixen, description: "..." },
 ];
